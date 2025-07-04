@@ -50,6 +50,14 @@
   color: #007bff;
 }
 
+.delete-btn{
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background-color: red;
+
+}
+
 .delete-button {
   border-radius: 4px;
   border: 1px solid black;
@@ -91,4 +99,15 @@
   padding: 8px 5px;
   color: white;
   transition: .2s ease-in-out;
+}
+.checkout-btn p {
+  padding: 15px 15px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-bottom: 20px; 
+}
+
+.checkout-btn:hover p{
+  color: white;
+  background-color: black;
 }

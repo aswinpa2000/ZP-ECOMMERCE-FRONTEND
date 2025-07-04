@@ -1,6 +1,5 @@
 // src/components/Clothings/Clothings.js
 import "../Clothings/Clothings.css";
-import React from "react"; // Removed useState as local state for cart/product is no longer needed here
 import shirtImg from "../assets/shirt.jpg";
 import tshirtImg from "../assets/tshirt.jpg";
 import jeansImg from "../assets/jeans.jpg";
@@ -60,12 +59,7 @@ const clothingItems = [
   },
 ];
 
-const Clothings = ({ addToCart }) => { // Receive addToCart as a prop
-
-  // --- REMOVED REDUNDANT LOCAL STATE ---
-  // const [product, setProduct] = useState(clothingItems);
-  // const [cart, setCart] = useState([]);
-  // --- END REMOVED REDUNDANT LOCAL STATE ---
+const Clothings = ({ addToCart }) => { // Receive addToCart as a props
 
   return (
     <div className="product-container">
