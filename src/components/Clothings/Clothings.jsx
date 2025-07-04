@@ -1,4 +1,5 @@
 import "../Clothings/Clothings.css";
+import React, { useState } from "react";
 import shirtImg from "../assets/shirt.jpg";
 import tshirtImg from "../assets/tshirt.jpg";
 import jeansImg from "../assets/jeans.jpg";
@@ -58,7 +59,11 @@ const clothingItems = [
   },
 ];
 
-const Clothings = ({ prod, addToCart }) => {
+const Clothings = ({ addToCart }) => {
+
+const [product, setProduct] = useState(clothingItems);
+const [cart, setCart] = useState([]);
+
   return (
     <div className="product-container">
       {clothingItems.map((item) => (

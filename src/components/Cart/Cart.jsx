@@ -2,11 +2,7 @@ import "./Cart.css";
 
 const Cart = ({ cartItems, onDelete }) => {
   const calculateTotal = () => {
-    // remove $ symbol and convert to number
-    return cartItems.reduce((total, item) => {
-      const price = parseFloat(item.price.replace("$", ""));
-      return total + price;
-    }, 0);
+    return cartItems.reduce((total, item) => total + item.price, 0);
   };
 
   return (
@@ -23,7 +19,7 @@ const Cart = ({ cartItems, onDelete }) => {
                 <img src={item.image} alt={item.name} className="cart-item-image" />
                 <div className="cart-item-details">
                   <h3>{item.name}</h3>
-                  <p>{item.price}</p>
+                  <p>₹{item.price}</p>
                 </div>
                 <button
                   className="delete-button"
@@ -36,7 +32,7 @@ const Cart = ({ cartItems, onDelete }) => {
           </div>
 
           <div className="cart-total">
-            <h3>Total: ${calculateTotal().toFixed(2)}</h3>
+            <h3>Total: ₹{calculateTotal().toFixed(2)}</h3>
           </div>
         </>
       )}

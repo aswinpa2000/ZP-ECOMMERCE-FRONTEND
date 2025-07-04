@@ -1,4 +1,5 @@
 import "./Watches.css";
+import React, { useState } from "react";
 import analogImg from "../assets/analogwatch.jpg";
 import digitalImg from "../assets/digitalwatch.jpg";
 import smartwatchImg from "../assets/smartwatch.jpg";
@@ -58,7 +59,15 @@ const watchItems = [
   },
 ];
 
-const Watches = () => {
+
+const Watches = ({ addToCart }) => {
+  const [product, setProduct] = useState(watchItems);
+  const [cart, setCart] = useState([]);
+
+
+  const deleteFromCart = (indexToRemove) => {
+    setCart((prevCart) => prevCart.filter((_, i) => i !== indexToRemove));
+  };
   return (
     <div className="product-container">
       {watchItems.map((item) => (
