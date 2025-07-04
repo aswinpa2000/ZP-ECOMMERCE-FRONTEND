@@ -3,8 +3,8 @@
 .product-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-  padding: 20px;
+  gap: 15px;
+  padding: 10px;
   justify-items: center;
   margin-top: 50px;
 }

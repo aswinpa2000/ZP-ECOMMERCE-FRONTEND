@@ -14,8 +14,6 @@ const Navbar = ({ cartCount }) => {
         <Link to="/electronics" className="nav-link">Electronics</Link>
       </div>
       <div className="navbar-right">
-        <Link to="/login" className="nav-link">Login</Link>
-        <Link to="/signup" className="nav-link">Sign-Up</Link>
         <Link to="/cart" className="nav-link" title="Cart">🛒({cartCount})</Link>
 
       </div>

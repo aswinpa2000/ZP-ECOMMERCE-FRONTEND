@@ -1,5 +1,6 @@
+// src/components/Clothings/Clothings.js
 import "../Clothings/Clothings.css";
-import React, { useState } from "react";
+import React from "react"; // Removed useState as local state for cart/product is no longer needed here
 import shirtImg from "../assets/shirt.jpg";
 import tshirtImg from "../assets/tshirt.jpg";
 import jeansImg from "../assets/jeans.jpg";
@@ -59,10 +60,12 @@ const clothingItems = [
   },
 ];
 
-const Clothings = ({ addToCart }) => {
+const Clothings = ({ addToCart }) => { // Receive addToCart as a prop
 
-const [product, setProduct] = useState(clothingItems);
-const [cart, setCart] = useState([]);
+  // --- REMOVED REDUNDANT LOCAL STATE ---
+  // const [product, setProduct] = useState(clothingItems);
+  // const [cart, setCart] = useState([]);
+  // --- END REMOVED REDUNDANT LOCAL STATE ---
 
   return (
     <div className="product-container">
@@ -70,14 +73,15 @@ const [cart, setCart] = useState([]);
         <div className="product-card" key={item.id}>
           <img src={item.image} alt={item.name} className="product-image" />
           <h3 className="product-name">{item.name}</h3>
-          <p className="product-price">{item.price}</p>
+          <p className="product-brand">{item.brand}</p>
+          <p className="product-material">{item.material}</p>
+          <p className="product-price">₹{item.price}</p>
           <button className="add-to-cart" onClick={() => addToCart(item)}>
             Add to Cart
           </button>
         </div>
       ))}
     </div>
-
   );
 };
 

@@ -1,5 +1,5 @@
 import "./Electronics.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import laptopImg from "../assets/laptop.jpg";
 import mobileImg from "../assets/mobile.jpg";
 import tvImg from "../assets/smarttv.jpg";
@@ -9,7 +9,7 @@ import tabletImg from "../assets/tablet.jpg";
 
 const electronicsItems = [
   {
-    id: 1,
+    id: 101,
     name: "Laptop",
     brand: "HP",
     material: "i5, 8GB RAM, 512GB SSD",
@@ -17,7 +17,7 @@ const electronicsItems = [
     image: laptopImg,
   },
   {
-    id: 2,
+    id: 102,
     name: "Mobile",
     brand: "Samsung",
     material: "6.5” Display, 128GB Storage",
@@ -25,7 +25,7 @@ const electronicsItems = [
     image: mobileImg,
   },
   {
-    id: 3,
+    id: 103,
     name: "Smart TV",
     brand: "Sony Bravia",
     material: "43'' 4K HDR Android TV",
@@ -33,7 +33,7 @@ const electronicsItems = [
     image: tvImg,
   },
   {
-    id: 4,
+    id: 104,
     name: "Earbuds",
     brand: "OnePlus",
     material: "Noise Cancellation, 30hr Battery",
@@ -41,7 +41,7 @@ const electronicsItems = [
     image: earbudsImg,
   },
   {
-    id: 5,
+    id: 105,
     name: "Bluetooth Speaker",
     brand: "Marshal",
     material: "Bass Boost, 12hr Battery",
@@ -49,7 +49,7 @@ const electronicsItems = [
     image: speakerImg,
   },
   {
-    id: 6,
+    id: 106,
     name: "Tablet",
     brand: "Lenovo",
     material: "10.1'' Display, 4GB RAM",

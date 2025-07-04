@@ -10,7 +10,7 @@ import luxuryImg from "../assets/luxurywatch.jpg";
 
 const watchItems = [
   {
-    id: 1,
+    id: 201,
     name: "Analog Watch",
     brand: "Titan",
     material: "Leather Strap, Water Resistant",
@@ -18,7 +18,7 @@ const watchItems = [
     image: analogImg,
   },
   {
-    id: 2,
+    id: 202,
     name: "Digital Watch",
     brand: "Casio",
     material: "LED Display, Alarm & Timer",
@@ -26,7 +26,7 @@ const watchItems = [
     image: digitalImg,
   },
   {
-    id: 3,
+    id: 203,
     name: "Smartwatch",
     brand: "Noise",
     material: "Bluetooth Calling, Fitness Tracker",
@@ -34,7 +34,7 @@ const watchItems = [
     image: smartwatchImg,
   },
   {
-  id: 4,
+  id: 204,
   name: "Leather Watch",
   brand: "Fossil",
   material: "Genuine Leather Strap, Quartz Movement",
@@ -42,7 +42,7 @@ const watchItems = [
   image: lWatchImg,
   },
   {
-    id: 5,
+    id: 205,
     name: "Sports Watch",
     brand: "boAt",
     material: "SpO2, Heart Rate Monitor",
@@ -50,7 +50,7 @@ const watchItems = [
     image: sportsImg,
   },
   {
-    id: 6,
+    id: 206,
     name: "Luxury Watch",
     brand: "Rolex",
     material: "Gold Plated, Water Proof",
